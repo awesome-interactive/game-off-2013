@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: c3782b85a51af7844b192935907ce4a7
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: JekyllHyde_Hyde_Run_01_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 547
+        width: 171
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_1
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 568
+        width: 142
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 560
+        width: 113
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 369
+        width: 140
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_4
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 365
+        width: 162
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 383
+        width: 171
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 187
+        width: 171
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_7
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 208
+        width: 143
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_8
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 200
+        width: 113
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9
+        width: 140
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_10
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 5
+        width: 162
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: JekyllHyde_Hyde_Run_01_11
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 23
+        width: 171
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

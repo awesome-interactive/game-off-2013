@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: c377e19531348a8469233ce4b7b3e552
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: JekyllHyde_Chimney_01_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 587
+        width: 80
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_1
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 587
+        width: 101
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_2
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 587
+        width: 132
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_3
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 590
+        width: 159
+        height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_4
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 606
+        width: 239
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 386
+        width: 323
+        height: 195
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_6
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 376
+        width: 336
+        height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 109
+        width: 342
+        height: 215
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_41
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6
+        width: 290
+        height: 51
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_25
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 101
+        width: 335
+        height: 222
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_14
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 236
+        width: 290
+        height: 88
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: JekyllHyde_Chimney_01_15
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 367
+        width: 337
+        height: 209
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
