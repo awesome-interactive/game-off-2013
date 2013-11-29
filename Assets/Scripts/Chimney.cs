@@ -14,12 +14,12 @@ public class Chimney : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-	
 	}
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
 		anim.SetTrigger ("Demolish");
 		gameObject.collider2D.enabled = false;
+		SoundEffectsHelper.Instance.MakeChimneyCollapseSound();
 	}
 }

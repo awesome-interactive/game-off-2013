@@ -27,26 +27,58 @@ public class PlayerScript : MonoBehaviour
 		jump.enabled = isJeykll;
 		charge.enabled = !isJeykll;
 
+		Move();
+
+		if (Input.GetButtonDown("Fire1")) 
+		{
+			Transform();
+		}
+	}
+
+	private void Move()
+	{
 		float inputX = Input.GetAxis("Horizontal");
 		Vector3 movement = new Vector3(speed * inputX, 0);
 		movement *= Time.deltaTime;
 		transform.Translate(movement);
+	}
 
-		if (Input.GetButtonDown("Fire1")) 
+	private void Transform()
+	{
+		if (isJeykll)
 		{
-			if (isJeykll == true)
-			{
-				isJeykll = false;
-				anim.SetTrigger("Transform to Hyde");
-			}
-			else
-			{
-				isJeykll = true;
-				anim.SetTrigger("Transform to Jekyll");
-			}
+			isJeykll = false;
+			anim.SetTrigger("Transform to Hyde");
+		}
+		else
+		{
+			isJeykll = true;
+			anim.SetTrigger("Transform to Jekyll");
 		}
 	}
 
+	private void Die()
+	{
+		IsDead = true;
+		speed = 0;
+
+		if (isJeykll)
+		{
+			anim.SetTrigger("Jeykll Dead");
+		}
+		else 
+		{
+			anim.SetTrigger("Hyde Dead");
+		}
+
+		transform.parent.gameObject.AddComponent<GameOverScript>();
+	}
+
+	void OnBecameInvisible()
+	{
+		Die();
+	}
+	
 	void OnTriggerEnter2D(Collider2D collider)
 	{
 		Chimney chimney = collider.gameObject.GetComponent<Chimney>();
@@ -59,17 +91,7 @@ public class PlayerScript : MonoBehaviour
 			}
 			else 
 			{
-				Debug.Log("DEAD - Dude you hit the chimney");
-				speed = 0;
-				if (isJeykll)
-				{
-					anim.SetTrigger("Jeykll Dead");
-				}
-				else 
-				{
-					anim.SetTrigger("Hyde Dead");
-				}
-
+				Die ();
 			}
 		}
 	}
