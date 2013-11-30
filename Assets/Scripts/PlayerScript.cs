@@ -13,12 +13,14 @@ public class PlayerScript : MonoBehaviour
 
 	private Jump jump;
 	private Charge charge;
+	private PlayerScore score;
 
 	void Start()
 	{
 		jump = GetComponent<Jump> ();
 		charge = GetComponent<Charge> ();
 		anim = gameObject.GetComponent<Animator> ();
+		score = GetComponent<PlayerScore>();
 	}
 
 	// Update is called once per frame
@@ -27,20 +29,10 @@ public class PlayerScript : MonoBehaviour
 		jump.enabled = isJeykll;
 		charge.enabled = !isJeykll;
 
-		Move();
-
 		if (Input.GetButtonDown("Fire1")) 
 		{
 			Transform();
 		}
-	}
-
-	private void Move()
-	{
-		float inputX = Input.GetAxis("Horizontal");
-		Vector3 movement = new Vector3(speed * inputX, 0);
-		movement *= Time.deltaTime;
-		transform.Translate(movement);
 	}
 
 	private void Transform()
@@ -72,6 +64,7 @@ public class PlayerScript : MonoBehaviour
 		}
 
 		transform.parent.gameObject.AddComponent<GameOverScript>();
+		PlayerScore.Instance.updateScore = false;
 	}
 
 	void OnBecameInvisible()
