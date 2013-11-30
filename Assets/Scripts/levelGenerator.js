@@ -1,5 +1,6 @@
 ﻿#pragma strict
 	
+var minDistance:float = 3;
 var maxDistance:float = 5;
 var speed:float = 0.1;
 var blockRepositoryTarget:String = "/levelBlocks";
@@ -16,7 +17,7 @@ function Start () {
 	firstBlock.transform.parent = transform;
 
 	//update offset
-	currentOffset += getBlockWidth(firstBlock);
+	currentOffset += getBlockWidth(firstBlock) + 1.5;
 
 	//generate initial level
 	for(var i = 0; i < 20; i++) {
@@ -29,7 +30,6 @@ function Update () {
 	frameCount++;
 	if(frameCount % 100 == 0) {
 		addRandomBlock();
-		Debug.Log('adding block');
 	}
 }
 
@@ -54,7 +54,7 @@ function addRandomBlock () {
 	var blockIndex:int = Mathf.Floor(Random.Range(1,blockCount));
 
 	//generate random distance
-	var distance:float = Random.Range(0,maxDistance);
+	var distance:float = Random.Range(minDistance,maxDistance);
 
 	//generate level
 	addBlock(blockIndex,distance);

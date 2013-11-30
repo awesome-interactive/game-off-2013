@@ -27,21 +27,13 @@ public class PlayerScript : MonoBehaviour
 		jump.enabled = isJeykll;
 		charge.enabled = !isJeykll;
 
-		Move();
-
 		if (Input.GetButtonDown("Fire1")) 
 		{
 			Transform();
 		}
 	}
 
-	private void Move()
-	{
-		float inputX = Input.GetAxis("Horizontal");
-		Vector3 movement = new Vector3(speed * inputX, 0);
-		movement *= Time.deltaTime;
-		transform.Translate(movement);
-	}
+	
 
 	private void Transform()
 	{
@@ -85,6 +77,7 @@ public class PlayerScript : MonoBehaviour
 
 		if (chimney != null) 
 		{
+			Debug.Log("I hit a chimney");
 			if (!isJeykll && charge.isCharging)
 			{
 				Debug.Log("You live");
