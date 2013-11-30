@@ -13,12 +13,14 @@ public class PlayerScript : MonoBehaviour
 
 	private Jump jump;
 	private Charge charge;
+	private PlayerScore score;
 
 	void Start()
 	{
 		jump = GetComponent<Jump> ();
 		charge = GetComponent<Charge> ();
 		anim = gameObject.GetComponent<Animator> ();
+		score = GetComponent<PlayerScore>();
 	}
 
 	// Update is called once per frame
@@ -32,8 +34,6 @@ public class PlayerScript : MonoBehaviour
 			Transform();
 		}
 	}
-
-	
 
 	private void Transform()
 	{
@@ -64,6 +64,7 @@ public class PlayerScript : MonoBehaviour
 		}
 
 		transform.parent.gameObject.AddComponent<GameOverScript>();
+		PlayerScore.Instance.updateScore = false;
 	}
 
 	void OnBecameInvisible()
@@ -77,7 +78,6 @@ public class PlayerScript : MonoBehaviour
 
 		if (chimney != null) 
 		{
-			Debug.Log("I hit a chimney");
 			if (!isJeykll && charge.isCharging)
 			{
 				Debug.Log("You live");

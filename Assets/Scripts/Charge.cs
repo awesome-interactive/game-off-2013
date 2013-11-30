@@ -16,7 +16,6 @@ public class Charge : MonoBehaviour
 	private float startingPos;
 	private float speed;
 
-	// Use this for initialization
 	void Start () 
 	{
 		anim = gameObject.GetComponent<Animator> ();
@@ -25,7 +24,6 @@ public class Charge : MonoBehaviour
 		speed = (chargeDistance / chargeFrameCount);
 	}
 	
-	// Update is called once per frame
 	void Update () 
 	{
 		if (recharge > 0) 
@@ -37,7 +35,7 @@ public class Charge : MonoBehaviour
 			isCharging = false;
 		}
 
-		if (Input.GetButtonDown(chargeButton) && !isCharging) 
+		if (!(Input.GetButtonDown(chargeButton) && !isCharging))
 		{
 			isCharging = true;
 			recharge = rechargeRate;
@@ -46,25 +44,25 @@ public class Charge : MonoBehaviour
 			rigidbody2D.AddForce (transform.right * chargePower);
 			chargeDirection = 1;
 		}
-		else if (Input.GetButtonDown(chargeButton) && isCharging) 
-		{
-			Debug.Log("I'm Already charging");
-		}
 
 		if(chargeDirection == 1) 
 		{
 			Vector3 movement = new Vector3(speed, 0);
 			transform.Translate(movement);
-			if(++chargeCurrentFrame  == chargeFrameCount) {
+
+			if(++chargeCurrentFrame == chargeFrameCount) 
+			{
 				chargeDirection = -1;
 			}
-		} else if (chargeDirection == -1) {
+		}
+		else if (chargeDirection == -1) 
+		{
 			Vector3 movement = new Vector3(-speed, 0);
 			transform.Translate(movement);
-			if(--chargeCurrentFrame  == 0) {
+			if(--chargeCurrentFrame == 0) 
+			{
 				chargeDirection = 0;
 			}
 		}
-
 	}
 }
