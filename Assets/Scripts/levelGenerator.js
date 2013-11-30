@@ -28,7 +28,7 @@ function Start () {
 function Update () {
 	transform.position.x -= speed;
 	frameCount++;
-	if(frameCount % 100 == 0) {
+	if(frameCount % 200 == 0) {
 		addRandomBlock();
 	}
 }

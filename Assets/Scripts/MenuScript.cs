@@ -10,8 +10,8 @@ public class MenuScript : MonoBehaviour
 	{
 		const int buttonWidth = 100;
 		const int buttonHeight = 40;
-		const int y = 340;
-		const int x = 372;
+		const int y = 450;
+		const int x = 430;
 
 		Rect rect = new Rect(x, y, buttonWidth, buttonHeight);
 
