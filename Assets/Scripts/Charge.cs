@@ -35,7 +35,7 @@ public class Charge : MonoBehaviour
 			isCharging = false;
 		}
 
-		if (!(Input.GetButtonDown(chargeButton) && !isCharging))
+		if (Input.GetButtonDown(chargeButton) && !isCharging)
 		{
 			isCharging = true;
 			recharge = rechargeRate;
